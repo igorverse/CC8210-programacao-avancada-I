@@ -13,7 +13,7 @@ Faça um programa que recebe um ano (ano > 2007) e determina o salário atual do
 '''
 
 tax = 0.015
-salary = 5000 + (5000 * tax)
+salary = 5000 * ( 1 + tax)
 year = int(input('Digite o ano desejado: '))
 countYear = year
 
