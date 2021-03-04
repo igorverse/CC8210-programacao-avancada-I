@@ -8,7 +8,7 @@ reservatório em: segundos, minutos e horas (quantidades inteiras).
 flowRate = float(input('Vazão da bomba em litros por segundo: '))
 tankCapacity = float(input('Capacidade do reservatório em litros: '))
 
-totalTime = flowRate * tankCapacity
+totalTime = tankCapacity / flowRate
 
 hours = totalTime // 3600
 minutes = ((totalTime / 3600 - hours) * 60) // 1
