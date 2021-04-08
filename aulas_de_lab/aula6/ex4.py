@@ -10,4 +10,4 @@ def nomeCitacao(aName):
     
     return print(author)
 
-print(nomeCitacao("Paulo Santos"))
+nomeCitacao("Paulo Santos")
