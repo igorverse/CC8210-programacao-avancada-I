@@ -9,17 +9,15 @@ newFilename = input('Insira o nome do novo arquivo: ')
 
 myFile = open(filename + '.py', 'r')
 newFile = open(newFilename + '.py', 'w')
-lines = "".join(myFile.readlines())
-listOflines = lines.split('\n')
+lines = ("".join(myFile.readlines())).split('\n')
 
-for line in listOflines:
-    if '#' not in line:
-        newFile.write(line + '\n')
+for line in lines:
+    if len(line) > 0:
+        if not (line[0] == '#'):
+            newFile.write(line + '\n')
 
 print('\n***Comentários removidos com sucesso.***\n')
 print('Novo código salvo em ' + newFilename + '.py')
 
 myFile.close()
 newFile.close()
-
-
