@@ -15,6 +15,8 @@ for line in lines:
     if len(line) > 0:
         if not (line[0] == '#'):
             newFile.write(line + '\n')
+    else:
+        newFile.write(line + '\n')
 
 print('\n***Comentários removidos com sucesso.***\n')
 print('Novo código salvo em ' + newFilename + '.py')
