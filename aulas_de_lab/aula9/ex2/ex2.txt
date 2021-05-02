@@ -1,0 +1,14 @@
+Escreva um módulo em Python com uma função que recebe uma string com as palavras
+separadas por hifen, a função deverá ordenar as palavras mantendo-as separadas por
+hifen, escreva uma segunda função que recebe essa string e calcule a quantidade de
+letra maíuculas e minusculas. Escreva também um programa principal (função main) para
+testar as funções.
+
+Exemplo:
+Python-Dados-OpenCV-Java-DataScience
+
+Saída:
+Dados-DataScience-Java-OpenCV-Python
+
+Maiusculas=8
+Minusculas=24

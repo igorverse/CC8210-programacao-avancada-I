@@ -1,0 +1,11 @@
+Exercício de Data Science – Um dos processos de Data Science é a
+preparação de dados, nesse processo deve-se coletar, limpar, combinar,
+normalizar os dados, para que possam ser utilizados nos processo de análise,
+treinamentos, etc.
+
+Escreva um módulo em Python com uma função que lê um arquivo que possui
+informações de um Data Set de imagens que serão utilizados para treinamento de um
+algoritmo de Object Detection. A função deverá remover todos as classes (class),
+deixando somente a classe ball. Crie uma segunda função que remova as colunas
+referente ao tamanho da imagem (width, height). Crie um programa principal (função
+main) que use as duas funções para escrever um novo arquivo.annotations.csv
