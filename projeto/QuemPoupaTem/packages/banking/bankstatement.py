@@ -28,6 +28,7 @@ def bank_stateament():
             print('\n=========== Extrato bancario ==========\nNome: %s\nCPF: %s\n%s' %(line["name"], line["cpf"], line["account type"]))
             for item in line["banking date"]:
                 print("Data:    ", item)
+            valid_informations = True
 
     if (valid_informations == False):
         print('\nDADOS INVÁLIDOS')
