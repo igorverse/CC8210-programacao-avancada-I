@@ -16,11 +16,14 @@ def delete_user():
 
     database = open('database.txt', 'r')
 
+    valid_informations = False
+
     for line in database.readlines():
         if cpf not in loads(line).values():
             new_lines.append(line)
         else:
             print('\nConta fechada com sucesso.')
+            valid_informations = True
 
     database = open('database.txt', 'w')
 
@@ -35,3 +38,6 @@ def delete_user():
     database.writelines(formated_database)
 
     database.close()
+
+    if (valid_informations == False):
+        print('\nCPF NÃO ENCONTRADO.')
