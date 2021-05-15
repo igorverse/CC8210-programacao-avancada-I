@@ -49,7 +49,7 @@ def withdraw():
                         line["banking date"].append(banking_date() + "  -" + "  " + str(new_withdraw) + "  Tarifa:  " + str(tax) + "   Saldo: %s" %line["balance"])
                         print('\nSAQUE REALIZADO!')
             else:
-                if line["account type"].lower() == "conta corrente":
+                if line["account type"].lower() == "conta plus":
                     new_withdraw = float(input('Valor do saque: '))
                     tax = new_withdraw * 0.01
                     new_balance = line["balance"] - (tax + new_withdraw)
