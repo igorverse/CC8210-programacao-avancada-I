@@ -5,12 +5,15 @@ Arguments:
 Return:
     return a list with the solicited values (name, cpf, bank account type, initial balance, user password and banking operations date).
 """
-from .verifyuser import verify_cpf
+from .verifyuser import verify_cpf, verify_account_type
 from .accounttype import account_type
 from json import dumps
 from .databaselength import database_length
 
 def new_bank_custommer():
+
+    name = input("Nome: ")
+
     validate_cpf = 0
     while validate_cpf != 11:
         cpf = input("Digite o seu CPF (apenas números): ")
@@ -18,11 +21,13 @@ def new_bank_custommer():
         if len(cpf) != 11:
             print('Atencao! CPF deve ter 11 digitos!\n')
 
+    custommer_account_type = account_type()
+
     new_custommer = {
-        "name": input("Nome: "),
+        "name": name,
         "cpf": cpf,
-        "account type": account_type(),
-        "balance": float(input("Saldo inicial: ")),
+        "account type": custommer_account_type,
+        "balance": verify_account_type(custommer_account_type),
         "password": (input("Cadastre uma senha: ")),
         "banking date": []
     }
