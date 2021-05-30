@@ -1,0 +1,1 @@
+# Manipulação de gráficos multiplos e de barras matplotlib. 

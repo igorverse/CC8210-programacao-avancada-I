@@ -25,7 +25,7 @@ def bank_stateament():
     for line in database_as_a_list:
 
         if (cpf == line["cpf"] and password == line["password"]):
-            print('\n=========== Extrato bancario ==========\nNome: %s\nCPF: %s\n%s' %(line["name"], line["cpf"], line["account type"]))
+            print('\n=========== Extrato bancário ==========\nNome: %s\nCPF: %s\n%s' %(line["name"], line["cpf"], line["account type"]))
             for item in line["banking date"]:
                 print("Data:    ", item)
             valid_informations = True

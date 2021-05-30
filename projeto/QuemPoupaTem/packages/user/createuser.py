@@ -19,7 +19,7 @@ def new_bank_custommer():
         cpf = input("Digite o seu CPF (apenas números): ")
         validate_cpf = len(cpf)
         if len(cpf) != 11:
-            print('Atencao! CPF deve ter 11 digitos!\n')
+            print('Atenção! CPF deve ter 11 dígitos!\n')
 
     custommer_account_type = account_type()
 
